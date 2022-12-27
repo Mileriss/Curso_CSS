@@ -1,0 +1,71 @@
+85 - SOMBRA DE CAIXA
+
+A propriedade CSS box-shadow é usada para aplicar uma ou mais sombras a um elemento.
+
+Especificar uma sombra horizontal e vertical:
+Em seu uso mais simples, você especifica apenas uma sombra horizontal e uma vertical. A cor padrão da sombra é a cor do texto atual.
+
+
+Especifique uma sombra horizontal e vertical:
+
+div {
+  box-shadow: 10px 10px;
+}
+
+Especifique uma cor para a sombra
+O color parâmetro define a cor da sombra.
+
+Especifique uma cor para a sombra:
+
+div {
+  box-shadow: 10px 10px lightblue;
+}
+
+
+Adicione um efeito de desfoque à sombra:
+O blur parâmetro define o raio de desfoque. Quanto maior o número, mais borrada será a sombra.
+
+Adicione um efeito de desfoque à sombra:
+
+div {
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+
+Definir o raio de propagação da sombra:
+O spread parâmetro define o raio de dispersão. Um valor positivo aumenta o tamanho da sombra, um valor negativo diminui o tamanho da sombra.
+
+Defina o raio de propagação da sombra:
+
+div {
+  box-shadow: 10px 10px 5px 12px lightblue;
+}
+
+
+Defina o parâmetro de inserção:
+O inset parâmetro altera a sombra de uma sombra externa (início) para uma sombra interna.
+
+Adicione o parâmetro de inserção:
+
+div {
+  box-shadow: 10px 10px 5px lightblue inset;
+}
+
+
+Adicionar várias sombras:
+Um elemento também pode ter várias sombras:
+
+div {
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}
+
+
+Cartões:
+Você também pode usar a box-shadow propriedade para criar cartões semelhantes a papel:
+
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+

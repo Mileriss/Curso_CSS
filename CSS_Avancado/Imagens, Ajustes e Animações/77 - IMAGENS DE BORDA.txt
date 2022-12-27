@@ -1,0 +1,65 @@
+77 - IMAGENS DE BORDA
+
+Com a propriedade CSS border-image, você pode definir uma imagem para ser usada como borda ao redor de um elemento.
+
+
+Propriedade de imagem de borda CSS:
+A propriedade CSS border-imagepermite especificar uma imagem a ser usada em vez da borda normal ao redor de um elemento.
+
+A propriedade tem três partes:
+
+- A imagem a ser usada como borda
+- Onde cortar a imagem
+- Defina se as seções do meio devem ser repetidas ou esticadas
+
+A border-image propriedade pega a imagem e a divide em nove seções, como um jogo da velha. Em seguida, ele coloca os cantos nos cantos e as seções do meio são repetidas ou esticadas conforme você especifica.
+
+Nota: Para border-image funcionar, o elemento também precisa do borderconjunto de propriedades!
+
+#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+
+Aqui, as seções do meio da imagem são esticadas para criar a borda:
+
+#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;
+}
+
+
+
+CSS border-image - Diferentes valores de fatia:
+Diferentes valores de fatia alteram completamente a aparência da borda:
+
+Exemplo 1:
+border-image: url(border.png) 50 rodadas;
+
+Exemplo 2:
+border-image: url(border.png) 20% redondo;
+
+Exemplo 3:
+border-image: url(border.png) 30% redondo;
+
+
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 50 round;
+}
+
+#borderimg2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 20% round;
+}
+
+#borderimg3 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30% round;
+}
+

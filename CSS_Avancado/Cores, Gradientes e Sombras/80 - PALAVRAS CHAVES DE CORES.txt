@@ -1,0 +1,68 @@
+80 - PALAVRAS CHAVES DE CORES
+
+Esta página explicará as palavras-chave transparent, currentcolor, e inherit.
+
+A palavra-chave transparente:
+A transparent palavra-chave é usada para tornar uma cor transparente. Isso geralmente é usado para criar uma cor de fundo transparente para um elemento.
+
+Aqui, a cor de fundo do elemento <div> será totalmente transparente e a imagem de fundo será exibida:
+
+body {
+  background-image: url("paper.gif");
+}
+
+div {
+  background-color: transparent;
+}
+
+
+A palavra-chave cor atual:
+A currentcolor palavra-chave é como uma variável que contém o valor atual da propriedade color de um elemento.
+
+Essa palavra-chave pode ser útil se você quiser que uma cor específica seja consistente em um elemento ou página.
+
+Neste exemplo, a cor da borda do elemento <div> será azul, porque a cor do texto do elemento <div> é azul:
+
+div {
+  color: blue;
+  border: 10px solid currentcolor;
+}
+
+Neste exemplo, a cor de fundo do <div> é definida para o valor de cor atual do elemento body:
+
+body {
+  color: purple;
+}
+
+div {
+  background-color: currentcolor;
+}
+
+Neste exemplo, a cor da borda e a cor da sombra do <div> são definidas para o valor de cor atual do elemento body:
+
+body {
+ color: green;
+}
+
+div {
+  box-shadow: 0px 0px 15px currentcolor;
+  border: 5px solid currentcolor;
+}
+
+
+A palavra-chave herdada:
+A palavra- inherit chave especifica que uma propriedade deve herdar seu valor de seu elemento pai.
+
+A inherit palavra-chave pode ser usada para qualquer propriedade CSS e em qualquer elemento HTML.
+
+Neste exemplo, as configurações de borda do <span> serão herdadas do elemento pai: 
+
+div {
+  border: 2px solid red;
+}
+
+span {
+  border: inherit;
+}
+
+

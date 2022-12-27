@@ -1,0 +1,138 @@
+93 - IMAGENS DE ESTILO
+
+Aprenda como estilizar imagens usando CSS.
+
+Imagens arredondadas:
+Use a border-radius propriedade para criar imagens arredondadas:
+
+Imagem arredondada:
+img {
+  border-radius: 8px;
+}
+
+Imagem Circulada:
+img {
+  border-radius: 50%;
+}
+
+
+Imagens em miniatura:
+Use a border propriedade para criar imagens em miniatura.
+
+Imagem em miniatura:
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+<img src="paris.jpg" alt="Paris">
+
+
+Imagem em miniatura como link:
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+<a href="paris.jpg">
+  <img src="paris.jpg" alt="Paris">
+</a>
+
+
+Imagens responsivas:
+As imagens responsivas se ajustarão automaticamente ao tamanho da tela.
+
+Redimensione a janela do navegador para ver o efeito:
+
+Se você quiser que uma imagem diminua se necessário, mas nunca aumente para ser maior que seu tamanho original, adicione o seguinte:
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+Centralizar uma imagem:
+Para centralizar uma imagem, defina as margens esquerda e direita autoe transforme-a em um blockelemento:
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+Imagens/Cartões Polaroid:
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {width: 100%}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+Imagem transparente:
+A opacitypropriedade pode ter um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:
+
+img {
+  opacity: 0.5;
+}
+
+
+Filtros de imagem:
+A propriedade CSS filter adiciona efeitos visuais (como desfoque e saturação) a um elemento.
+
+Observação: a propriedade de filtro não tem suporte no Internet Explorer ou no Edge 12.
+
+Altere a cor de todas as imagens para preto e branco (100% cinza):
+
+img {
+  filter: grayscale(100%);
+}
+
+
+Galeria de imagens responsivas:
+CSS pode ser usado para criar galerias de imagens. Este exemplo usa consultas de mídia para reorganizar as imagens em diferentes tamanhos de tela. Redimensione a janela do navegador para ver o efeito:
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+

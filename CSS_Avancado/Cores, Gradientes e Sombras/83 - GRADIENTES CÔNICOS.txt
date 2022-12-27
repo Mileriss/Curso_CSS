@@ -1,0 +1,103 @@
+83 - GRADIENTES CÔNICOS
+
+Gradientes cônicos CSS:
+Um gradiente cônico é um gradiente com transições de cores giradas em torno de um ponto central.
+
+Para criar um gradiente cônico você deve definir pelo menos duas cores.
+
+Sintaxe
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+
+Por padrão, o ângulo é 0 graus e a posição é o centro.
+
+Se nenhum grau for especificado, as cores serão distribuídas igualmente ao redor do ponto central.
+
+
+Gradiente Cônico: Três Cores:
+O exemplo a seguir mostra um gradiente cônico com três cores:
+
+Um gradiente cônico com três cores:
+
+#grad {
+  background-image: conic-gradient(red, yellow, green);
+}
+
+
+Gradiente Cônico: Cinco Cores:
+O exemplo a seguir mostra um gradiente cônico com cinco cores:
+
+Um gradiente cônico com cinco cores:
+
+#grad {
+  background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+
+Gradiente Cônico: Três Cores e Graus:
+O exemplo a seguir mostra um gradiente cônico com três cores e um grau para cada cor:
+
+Um gradiente cônico com três cores e um grau para cada cor:
+
+#grad {
+  background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+
+
+Criar gráficos de pizza:
+Basta adicionar border-radius: 50%para fazer o gradiente cônico parecer uma torta:
+
+#grad {
+  background-image: conic-gradient(red, yellow, green, blue, black);
+  border-radius: 50%;
+}
+
+Aqui está outro gráfico de pizza com graus definidos para todas as cores:
+
+#grad {
+  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+  border-radius: 50%;
+}
+
+
+Gradiente cônico com ângulo especificado:
+O [from angle ] especifica um ângulo pelo qual todo o gradiente cônico é girado.
+
+O exemplo a seguir mostra um gradiente cônico com um ângulo de 90 graus:
+
+Um gradiente cônico com um ângulo:
+
+#grad {
+  background-image: conic-gradient(from 90deg, red, yellow, green);
+}
+
+
+Gradiente cônico com posição central especificada:
+O [na posição ] especifica o centro do gradiente cônico.
+
+O exemplo a seguir mostra um gradiente cônico com uma posição central de 60% 45%:
+
+Um gradiente cônico com uma posição central especificada:
+
+#grad {
+  background-image: conic-gradient(at 60% 45%, red, yellow, green);
+}
+
+
+Repetindo um gradiente cônico:
+A repeating-conic-gradient()função é usada para repetir gradientes cônicos:
+
+Um gradiente cônico repetitivo:
+
+#grad {
+  background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  border-radius: 50%;
+}
+
+Aqui está um gradiente cônico repetido com inícios e paradas de cores definidos:
+
+Um gradiente cônico repetitivo com inícios e paradas de cores definidos:
+
+#grad {
+  background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+  border-radius: 50%;
+}

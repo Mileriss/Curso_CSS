@@ -1,0 +1,72 @@
+99 - COLUNAS PARA TEXTOS
+
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width
+
+
+CSS Criar várias colunas:
+
+A column-count propriedade especifica o número de colunas em que um elemento deve ser dividido.
+
+div {
+  column-count: 3;
+}
+
+
+CSS Especificar a lacuna entre as colunas:
+
+A column-gappropriedade especifica a lacuna entre as colunas.
+
+div {
+  column-gap: 40px;
+}
+
+
+Regras de coluna CSS:
+A column-rule-stylepropriedade especifica o estilo da regra entre as colunas:
+
+div {
+  column-rule-style: solid;
+}
+
+A column-rule-widthpropriedade especifica a largura da regra entre as colunas:
+
+div {
+  column-rule-width: 1px;
+}
+
+A column-rule-colorpropriedade especifica a cor da regra entre as colunas:
+
+div {
+  column-rule-color: lightblue;
+}
+
+O exemplo a seguir define a largura, o estilo e a cor da regra entre as colunas:
+
+div {
+  column-rule: 1px solid lightblue;
+}
+
+
+Especificar quantas colunas um elemento deve abranger:
+A column-span propriedade especifica quantas colunas um elemento deve abranger.
+
+h2 {
+  column-span: all;
+}
+
+
+Especifique a largura da coluna:
+A column-width propriedade especifica uma largura ideal sugerida para as colunas.
+
+div {
+  column-width: 100px;
+}
+
+

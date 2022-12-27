@@ -1,0 +1,100 @@
+98 - PAGINAÇÃO
+
+Aprenda a criar uma paginação responsiva usando CSS.
+
+Paginação Simples:
+Se você tem um site com muitas páginas, você pode querer adicionar algum tipo de paginação a cada página:
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+Paginação ativa e flutuante:
+
+Realce a página atual com uma .active classe e use o :hover seletor para alterar a cor de cada link de página ao mover o mouse sobre eles:
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+Botões arredondados ativos e flutuantes:
+
+Adicione a border-radiuspropriedade se desejar um botão arredondado "ativo" e "passar o mouse":
+
+.pagination a {
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  border-radius: 5px;
+}
+
+
+Efeito de transição flutuante:
+
+Adicione a transition propriedade aos links da página para criar um efeito de transição ao passar o mouse:
+
+.pagination a {
+  transition: background-color .3s;
+}
+
+
+Paginação com Borda:
+
+Use a border propriedade para adicionar bordas à paginação:
+
+.pagination a {
+  border: 1px solid #ddd; /* Gray */
+}
+
+
+Bordas arredondadas:
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+Espaço entre links:
+
+.pagination a {
+  margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */
+}
+
+
+Tamanho da paginação:
+
+Altere o tamanho da paginação com a font-size propriedade:
+
+.pagination a {
+  font-size: 22px;
+}
+
+
+Paginação Centrada:
+
+Para centralizar a paginação, envolva um elemento de contêiner (como <div>) em torno dele comtext-align:center
+
+.center {
+  text-align: center;
+}
+
+

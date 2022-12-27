@@ -1,0 +1,81 @@
+86 - EFEITOS DE TEXTO
+
+Estouro de texto CSS:
+A propriedade CSS text-overflow especifica como o conteúdo estourado que não é exibido deve ser sinalizado ao usuário.
+
+Pode ser recortado:
+
+Este é um texto longo que não cabe na caixa
+
+ou pode ser renderizado como reticências (...):
+
+Este é um texto longo que não cabe na caixa
+
+O código CSS é o seguinte:
+
+Exemplo
+p.test1 {
+  white-space: nowrap;
+  width: 200px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+p.test2 {
+  white-space: nowrap;
+  width: 200px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+O exemplo a seguir mostra como você pode exibir o conteúdo transbordado ao passar o mouse sobre o elemento:
+
+div.test:hover {
+  overflow: visible;
+}
+
+
+Quebra de palavras CSS:
+A propriedade CSS word-wrappermite que palavras longas possam ser quebradas e colocadas na próxima linha. 
+
+Se uma palavra for muito longa para caber em uma área, ela se expandirá para fora:
+
+A propriedade word-wrap permite forçar o texto a quebrar - mesmo que isso signifique dividi-lo no meio de uma palavra:
+
+Permita que palavras longas possam ser quebradas e passar para a próxima linha:
+
+p {
+  word-wrap: break-word;
+}
+
+
+Quebra de palavras CSS:
+A propriedade CSS word-break especifica as regras de quebra de linha.
+
+p.test1 {
+  word-break: keep-all;
+}
+
+p.test2 {
+  word-break: break-all;
+}
+
+
+Modo de escrita CSS:
+A propriedade CSS writing-mode especifica se as linhas de texto são dispostas horizontalmente ou verticalmente.
+
+O exemplo a seguir mostra alguns modos de escrita diferentes:
+
+p.test1 {
+  writing-mode: horizontal-tb;
+}
+
+span.test2 {
+  writing-mode: vertical-rl;
+}
+
+p.test2 {
+  writing-mode: vertical-rl;
+}

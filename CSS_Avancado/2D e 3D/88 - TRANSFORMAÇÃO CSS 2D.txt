@@ -1,0 +1,144 @@
+88 - TRANSFORMAÇÃO CSS 2D
+
+As transformações CSS permitem mover, girar, dimensionar e inclinar elementos.
+
+Passe o mouse sobre o elemento abaixo para ver uma transformação 2D:
+
+Métodos de transformações CSS 2D:
+Com a propriedade CSS transformvocê pode usar os seguintes métodos de transformação 2D:
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+
+O método translate():
+
+O translate()método move um elemento de sua posição atual (de acordo com os parâmetros fornecidos para o eixo X e o eixo Y).
+
+O exemplo a seguir move o elemento <div> 50 pixels para a direita e 100 pixels para baixo de sua posição atual:
+
+div {
+  transform: translate(50px, 100px);
+}
+
+
+O método girar():
+O rotate()método gira um elemento no sentido horário ou anti-horário de acordo com um determinado grau.
+
+O exemplo a seguir gira o elemento <div> no sentido horário com 20 graus:
+
+div {
+  transform: rotate(20deg);
+}
+
+O uso de valores negativos girará o elemento no sentido anti-horário.
+
+O exemplo a seguir gira o elemento <div> no sentido anti-horário com 20 graus:
+
+div {
+  transform: rotate(-20deg);
+}
+
+
+O método escala():
+O scale()método aumenta ou diminui o tamanho de um elemento (de acordo com os parâmetros dados para largura e altura).
+
+O exemplo a seguir aumenta o elemento <div> para duas vezes sua largura original e três vezes sua altura original: 
+
+div {
+  transform: scale(2, 3);
+}
+
+O exemplo a seguir diminui o elemento <div> para metade de sua largura e altura originais: 
+
+div {
+  transform: scale(0.5, 0.5);
+}
+
+
+O método scaleX():
+O scaleX()método aumenta ou diminui a largura de um elemento.
+
+O exemplo a seguir aumenta o elemento <div> para duas vezes sua largura original: 
+
+div {
+  transform: scaleX(2);
+}
+
+O exemplo a seguir diminui o elemento <div> para metade de sua largura original: 
+
+div {
+  transform: scaleX(0.5);
+}
+
+
+O método scaleY():
+O scaleY()método aumenta ou diminui a altura de um elemento.
+
+O exemplo a seguir aumenta o elemento <div> para três vezes sua altura original: 
+
+div {
+  transform: scaleY(3);
+}
+
+O exemplo a seguir diminui o elemento <div> para metade de sua altura original: 
+
+div {
+  transform: scaleY(0.5);
+}
+
+
+O método skewX():
+O skewX()método inclina um elemento ao longo do eixo X pelo ângulo fornecido.
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X:
+
+div {
+  transform: skewX(20deg);
+}
+
+
+O método skewY():
+O skewY()método inclina um elemento ao longo do eixo Y pelo ângulo fornecido.
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo Y:
+
+div {
+  transform: skewY(20deg);
+}
+
+
+O método skew():
+O skew()método inclina um elemento ao longo dos eixos X e Y pelos ângulos fornecidos.
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X e 10 graus ao longo do eixo Y:
+
+div {
+  transform: skew(20deg, 10deg);
+}
+
+Se o segundo parâmetro não for especificado, ele terá um valor zero. Portanto, o exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X:
+
+div {
+  transform: skew(20deg);
+}
+
+
+O método matriz():
+O matrix()método combina todos os métodos de transformação 2D em um.
+
+O método matrix() aceita seis parâmetros, contendo funções matemáticas, que permitem girar, dimensionar, mover (traduzir) e inclinar elementos.
+
+Os parâmetros são os seguintes: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+div {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+

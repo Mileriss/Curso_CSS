@@ -1,0 +1,33 @@
+89 - TRANSFORMAÇÕES CSS 3D
+
+CSS também suporta transformações 3D.
+
+Com a propriedade CSS transformvocê pode usar os seguintes métodos de transformação 3D:
+
+rotateX()
+rotateY()
+rotateZ()
+
+
+O método girarX():
+O rotateX()método gira um elemento em torno de seu eixo X em um determinado grau:
+
+#myDiv {
+  transform: rotateX(150deg);
+}
+
+
+O método girarY():
+O rotateY()método gira um elemento em torno de seu eixo Y em um determinado grau:
+
+#myDiv {
+  transform: rotateY(150deg);
+}
+
+
+O método girarZ():
+O rotateZ()método gira um elemento em torno de seu eixo Z em um determinado grau:
+
+#myDiv {
+  transform: rotateZ(90deg);
+}

@@ -1,0 +1,137 @@
+78 - FUNDOS MULTIPLOS
+
+CSS permite adicionar várias imagens de fundo para um elemento, através da background-imagepropriedade.
+
+As diferentes imagens de fundo são separadas por vírgulas e as imagens são empilhadas umas sobre as outras, onde a primeira imagem está mais próxima do visualizador.
+
+O exemplo a seguir tem duas imagens de plano de fundo, a primeira imagem é uma flor (alinhada à parte inferior e à direita) e a segunda imagem é um plano de fundo de papel (alinhada ao canto superior esquerdo):
+
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+
+Várias imagens de plano de fundo podem ser especificadas usando as propriedades de plano de fundo individuais (como acima) ou a backgroundpropriedade abreviada.
+
+O exemplo a seguir usa a background propriedade shorthand (mesmo resultado do exemplo acima):
+
+#example1 {
+  background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+}
+
+
+Tamanho do plano de fundo CSS:
+A propriedade CSS background-size permite especificar o tamanho das imagens de fundo.
+
+O tamanho pode ser especificado em comprimentos, porcentagens ou usando uma das duas palavras-chave: conter ou cobrir.
+
+O exemplo a seguir redimensiona uma imagem de plano de fundo para muito menor que a imagem original (usando pixels):
+
+#div1 {
+  background: url(img_flower.jpg);
+  background-size: 100px 80px;
+  background-repeat: no-repeat;
+}
+
+
+Os outros dois valores possíveis para background-sizesão contain e cover.
+
+A contain palavra-chave dimensiona a imagem de fundo para ser o maior possível (mas tanto a largura quanto a altura devem caber dentro da área de conteúdo). Assim, dependendo das proporções da imagem de fundo e da área de posicionamento do fundo, pode haver algumas áreas do fundo que não são cobertas pela imagem de fundo.
+
+A cover palavra-chave dimensiona a imagem de fundo para que a área de conteúdo seja completamente coberta pela imagem de fundo (sua largura e altura são iguais ou excedem a área de conteúdo). Como tal, algumas partes da imagem de fundo podem não ser visíveis na área de posicionamento de fundo.
+
+O exemplo a seguir ilustra o uso de containe cover:
+
+#div1 {
+  background: url(img_flower.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#div2 {
+  background: url(img_flower.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+Definir tamanhos de várias imagens de fundo:
+A background-size propriedade também aceita vários valores para o tamanho do plano de fundo (usando uma lista separada por vírgulas), ao trabalhar com vários planos de fundo.
+
+O exemplo a seguir tem três imagens de plano de fundo especificadas, com valores de tamanho de plano de fundo diferentes para cada imagem:
+
+#example1 {
+  background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+  background-size: 50px, 130px, auto;
+}
+
+
+Imagem de fundo em tamanho real:
+Agora queremos ter uma imagem de fundo em um site que cubra toda a janela do navegador o tempo todo.
+
+Os requisitos são os seguintes:
+
+Preencha toda a página com a imagem (sem espaço em branco)
+Dimensione a imagem conforme necessário
+Centralizar imagem na página
+Não cause barras de rolagem
+O exemplo a seguir mostra como fazer isso; Use o elemento <html> (o elemento <html> sempre tem pelo menos a altura da janela do navegador). Em seguida, defina um plano de fundo fixo e centralizado nele. Em seguida, ajuste seu tamanho com a propriedade background-size:
+
+html {
+  background: url(img_man.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+
+Imagem do herói:
+Você também pode usar diferentes propriedades de plano de fundo em um <div> para criar uma imagem principal (uma imagem grande com texto) e colocá-la onde quiser.
+
+.hero-image {
+  background: url(img_man.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+
+Propriedade CSS background-origin:
+A propriedade CSS background-origin especifica onde a imagem de fundo está posicionada.
+
+A propriedade assume três valores diferentes:
+
+- border-box - a imagem de fundo começa no canto superior esquerdo da borda
+- caixa de preenchimento - (padrão) a imagem de fundo começa no canto superior esquerdo da borda de preenchimento
+- content-box - a imagem de fundo começa no canto superior esquerdo do conteúdo
+
+O exemplo a seguir ilustra a background-origin propriedade:
+
+#example1 {
+  border: 10px solid black;
+  padding: 35px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+
+Propriedade do clipe de fundo CSS:
+A propriedade CSS background-clip especifica a área de pintura do plano de fundo.
+
+A propriedade assume três valores diferentes:
+
+- border-box - (padrão) o plano de fundo é pintado na borda externa da borda
+- caixa de preenchimento - o fundo é pintado na borda externa do preenchimento
+- content-box - o fundo é pintado dentro da caixa de conteúdo
+
+O exemplo a seguir ilustra a background-clip propriedade:
+
+#example1 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: content-box;
+}
+
+

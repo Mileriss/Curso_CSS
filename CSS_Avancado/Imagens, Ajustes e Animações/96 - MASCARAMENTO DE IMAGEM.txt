@@ -1,0 +1,118 @@
+96 - MASCARAMENTO DE IMAGEM
+
+
+Com o mascaramento CSS, você cria uma camada de máscara para colocar sobre um elemento para ocultar parcialmente ou totalmente partes do elemento.
+
+A propriedade CSS mask-image especifica uma imagem de camada de máscara.
+
+
+Use uma imagem como a camada de máscara:
+Para usar uma imagem PNG ou SVG como camada de máscara, use um valor url() para passar a imagem da camada de máscara.
+
+A imagem da máscara precisa ter uma área transparente ou semitransparente. Preto indica totalmente transparente.
+
+
+Aqui está o código fonte:
+
+.mask1 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+A mask-image propriedade especifica a imagem a ser usada como camada de máscara para um elemento.
+
+A mask-repeat propriedade especifica se ou como uma imagem de máscara será repetida. O no-repeat valor indica que a imagem da máscara não será repetida (a imagem da máscara será mostrada apenas uma vez).
+
+
+Outro exemplo:
+Se omitirmos a mask-repeat propriedade, a imagem da máscara será repetida em toda a imagem de Cinque Terre, Itália:
+
+.mask1 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+}
+
+
+Use gradientes como a camada de máscara:
+Os gradientes lineares e radiais CSS também podem ser usados ​​como imagens de máscara.
+
+Exemplos de gradiente linear
+Aqui, usamos um gradiente linear como camada de máscara para nossa imagem. Este gradiente linear vai de cima (preto) para baixo (transparente):
+
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+Aqui, usamos um gradiente linear junto com o mascaramento de texto como camada de máscara para nossa imagem:
+
+.mask1 {
+  max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(img_5terre.jpg) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+
+
+Exemplos de gradiente radial:
+Aqui, usamos um gradiente radial (em forma de círculo) como camada de máscara para nossa imagem:
+
+Use um gradiente radial como uma camada de máscara (um círculo):
+
+.mask2 {
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+Aqui, usamos um gradiente radial (em forma de elipse) como camada de máscara para nossa imagem:
+
+Use outro gradiente radial como camada de máscara (uma elipse):
+
+.mask3 {
+  -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5));
+}
+
+
+
+Use SVG como a camada de máscara:
+O elemento SVG <mask> pode ser usado dentro de um gráfico SVG para criar efeitos de mascaramento.
+
+Aqui, usamos o <mask> elemento SVG para criar diferentes camadas de máscara para nossa imagem:
+
+Uma camada de máscara SVG (formada como um triângulo):
+
+<svg width="600" height="400">
+  <mask id="svgmask1">
+    <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+</svg>
+
+
+Uma camada de máscara SVG (formada como uma estrela):
+
+<svg width="600" height="400">
+  <mask id="svgmask2">
+    <polygon fill="#ffffff" points="100,10 40,198 190,78 10,78 160,198"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask2)"></image>
+</svg>
+
+
+Uma camada de máscara SVG (formada como círculos):
+
+<svg width="600" height="400">
+  <mask id="svgmask3">
+    <circle fill="#ffffff" cx="75" cy="75" r="75"></circle>
+    <circle fill="#ffffff" cx="80" cy="260" r="75"></circle>
+    <circle fill="#ffffff" cx="270" cy="160" r="75"></circle>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask3)"></image>
+</svg>
+
+

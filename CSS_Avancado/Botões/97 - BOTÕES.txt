@@ -1,0 +1,149 @@
+97 - BOTÕES
+
+Aprenda como estilizar botões usando CSS.
+
+Estilo básico de botões:
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+Use a background-color propriedade para alterar a cor de fundo de um botão:
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+
+
+Tamanhos de botão:
+
+Use a font-size propriedade para alterar o tamanho da fonte de um botão:
+
+.button1 {font-size: 10px;}
+.button2 {font-size: 12px;}
+.button3 {font-size: 16px;}
+.button4 {font-size: 20px;}
+.button5 {font-size: 24px;}
+
+
+Use a padding propriedade para alterar o preenchimento de um botão:
+
+.button1 {padding: 10px 24px;}
+.button2 {padding: 12px 28px;}
+.button3 {padding: 14px 40px;}
+.button4 {padding: 32px 16px;}
+.button5 {padding: 16px;}
+
+
+Botões arredondados:
+
+Use a border-radius propriedade para adicionar cantos arredondados a um botão:
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+Bordas de botão coloridas:
+Use a borderpropriedade para adicionar uma borda colorida a um botão:
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+...
+
+
+Botões flutuantes:
+
+Use o :hoverseletor para alterar o estilo de um botão ao mover o mouse sobre ele.
+
+Dica: Use a transition-durationpropriedade para determinar a velocidade do efeito "hover":
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+...
+
+
+Botões de sombra:
+
+Use a box-shadow propriedade para adicionar sombras a um botão:
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+Botões desativados:
+
+Use a opacity propriedade para adicionar transparência a um botão (cria uma aparência "desativada").
+
+Dica: Você também pode adicionar a cursorpropriedade com um valor de "não permitido", que exibirá um "sinal de proibição de estacionamento" ao passar o mouse sobre o botão:
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+Largura do botão:
+
+Por padrão, o tamanho do botão é determinado por seu conteúdo de texto (tão largo quanto seu conteúdo). Use a widthpropriedade para alterar a largura de um botão:
+
+.button1 {width: 250px;}
+.button2 {width: 50%;}
+.button3 {width: 100%;}
+
+
+Grupos de botões:
+
+Remova as margens e adicione float:lefta cada botão para criar um grupo de botões:
+
+.button {
+  float: left;
+}
+
+
+Grupo de botões com borda:
+
+Use a border propriedade para criar um grupo de botões com borda:
+
+.button {
+  float: left;
+  border: 1px solid green;
+}
+
+
+Grupo de botões verticais:
+
+Use display:block em vez de float:leftpara agrupar os botões um abaixo do outro, em vez de lado a lado:
+
+.button {
+  display: block;
+}
+
+
+Botão na imagem:
+

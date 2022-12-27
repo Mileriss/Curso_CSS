@@ -1,0 +1,72 @@
+37 - TAMANHO DA FONTE
+
+A font-size propriedade define o tamanho do texto.
+
+O valor do tamanho da fonte pode ser um tamanho absoluto ou relativo.
+
+Tamanho absoluto:
+Define o texto para um tamanho especificado
+Não permite que um usuário altere o tamanho do texto em todos os navegadores (ruim por motivos de acessibilidade)
+O tamanho absoluto é útil quando o tamanho físico da saída é conhecido
+
+Tamanho relativo:
+Define o tamanho em relação aos elementos circundantes
+Permite que um usuário altere o tamanho do texto nos navegadores
+
+
+Definir o tamanho da fonte com pixels:
+Definir o tamanho do texto com pixels oferece controle total sobre o tamanho do texto:
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+
+
+Definir tamanho da fonte com EM:
+Para permitir que os usuários redimensionem o texto (no menu do navegador), muitos desenvolvedores usam em vez de pixels.
+
+h1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2 {
+  font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+p {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+
+
+Use uma combinação de porcentagem e EM:
+A solução que funciona em todos os navegadores é definir um tamanho de fonte padrão em porcentagem para o elemento <body>:
+
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+
+Tamanho da fonte responsiva
+O tamanho do texto pode ser definido com uma vwunidade, o que significa a "largura da janela de visualização".
+
+<h1 style="font-size:10vw">Hello World</h1>

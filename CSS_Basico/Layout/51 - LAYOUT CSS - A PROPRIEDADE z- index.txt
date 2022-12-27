@@ -1,0 +1,118 @@
+51 - LAYOUT CSS - A PROPRIEDADE z- index
+
+A z-index propriedade especifica a ordem de pilha de um elemento.
+
+A propriedade z-index:
+Quando os elementos são posicionados, eles podem se sobrepor a outros elementos.
+
+A z-index propriedade especifica a ordem de pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).
+
+Um elemento pode ter uma ordem de pilha positiva ou negativa:
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+
+Outro exemplo de índice z:
+Aqui vemos que um elemento com maior ordem de pilha está sempre acima de um elemento com menor ordem de pilha:
+
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3;
+  background: lightgray;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="black-box">Black box</div>
+  <div class="gray-box">Gray box</div>
+  <div class="green-box">Green box</div>
+</div>
+
+</body>
+</html>
+
+
+Sem índice z:
+Se dois elementos posicionados se sobrepuserem sem um z-index especificado, o último elemento definido no código HTML será mostrado no topo.
+
+Mesmo exemplo acima, mas aqui sem z-index especificado:
+
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  background: lightgray;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="black-box">Black box</div>
+  <div class="gray-box">Gray box</div>
+  <div class="green-box">Green box</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+38 - FONTES DO GOOGLE
+
+Se você não quiser usar nenhuma das fontes padrão em HTML, poderá usar o Google Fonts.
+
+As fontes do Google são gratuitas e têm mais de 1.000 fontes para escolher.
+
+Como usar as fontes do Google:
+Basta adicionar um link de folha de estilo especial na seção <head> e, em seguida, consultar a fonte no CSS.
+
+Aqui, queremos usar uma fonte chamada "Sofia" do Google Fonts:
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+}
+</style>
+</head>
+
+
+Aqui, queremos usar uma fonte chamada "Trirong" do Google Fonts:
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<style>
+body {
+  font-family: "Trirong", serif;
+}
+</style>
+</head>
+
+
+Aqui, queremos usar uma fonte chamada "Audiowide" do Google Fonts:
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+body {
+  font-family: "Audiowide", sans-serif;
+}
+</style>
+</head>
+
+
+Usar várias fontes do Google:
+Para usar várias fontes do Google, basta separar os nomes das fontes com uma barra vertical ( |), assim:
+
+Solicite várias fontes:
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<style>
+h1.a {font-family: "Audiowide", sans-serif;}
+h1.b {font-family: "Sofia", sans-serif;}
+h1.c {font-family: "Trirong", serif;}
+</style>
+</head>
+
+
+Estilizando as fontes do Google:
+Claro que você pode estilizar o Google Fonts como quiser, com CSS!
+
+Estilize a fonte "Sofia":
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+</style>
+</head>
+
+
+Ativando efeitos de fonte:
+O Google também ativou diferentes efeitos de fonte que você pode usar.
+
+Primeiro adicione à API do Google e, em seguida, adicione um nome de classe especial ao elemento que usará o efeito especial. O nome da classe sempre começa e termina com o .effect=effectnamefont-effect-effectname
+
+Adicione o efeito de fogo à fonte "Sofia":
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="font-effect-fire">Sofia on Fire</h1>
+
+</body>
+
+
+Para solicitar vários efeitos de fonte, basta separar os nomes dos efeitos com uma barra vertical ( |), assim:
+
+Adicione vários efeitos à fonte "Sofia":
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="font-effect-neon">Neon Effect</h1>
+<h1 class="font-effect-outline">Outline Effect</h1>
+<h1 class="font-effect-emboss">Emboss Effect</h1>
+<h1 class="font-effect-shadow-multiple">Multiple Shadow Effect</h1>
+
+</body>

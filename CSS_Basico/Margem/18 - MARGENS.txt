@@ -1,0 +1,131 @@
+18 - MARGENS
+
+As margens são usadas para criar espaço ao redor dos elementos, fora de quaisquer bordas definidas.
+
+As propriedades CSS margin são usadas para criar espaço ao redor dos elementos, fora de quaisquer bordas definidas.
+
+Margem - Lados Individuais:
+CSS tem propriedades para especificar a margem para cada lado de um elemento:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Todas as propriedades de margem podem ter os seguintes valores:
+
+auto - o navegador calcula a margem
+comprimento - especifica uma margem em px, pt, cm, etc.
+% - especifica uma margem em % da largura do elemento que o contém
+herdar - especifica que a margem deve ser herdada do elemento pai
+
+Dica: Valores negativos são permitidos.
+
+Defina margens diferentes para todos os quatro lados de um elemento <p>:
+
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+
+
+Margem - Propriedade abreviada:
+Para encurtar o código, é possível especificar todas as propriedades de margem em uma propriedade.
+
+A margin propriedade é uma propriedade abreviada para as seguintes propriedades de margem individuais:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Então, aqui está como funciona:
+
+Se a margin propriedade tiver quatro valores:
+
+margem: 25px 50px 75px 100px;
+
+a margem superior é de 25px
+a margem direita é 50px
+a margem inferior é de 75px
+margem esquerda é 100px
+
+Use a propriedade abreviada de margem com quatro valores:
+
+p {
+  margin: 25px 50px 75px 100px;
+}
+
+
+Se a margin propriedade tiver três valores:
+
+margem: 25px 50px 75px;
+
+a margem superior é de 25px
+as margens direita e esquerda são 50px
+a margem inferior é de 75px
+
+Use a propriedade abreviada de margem com três valores: 
+
+p {
+  margin: 25px 50px 75px;
+}
+
+
+Se a margin propriedade tiver dois valores:
+
+margem: 25px 50px;
+
+as margens superior e inferior são 25px
+as margens direita e esquerda são 50px
+
+Use a propriedade abreviada de margem com dois valores: 
+
+p {
+  margin: 25px 50px;
+}
+
+
+Se a margin propriedade tiver um valor:
+
+margem: 25px;
+
+todas as quatro margens são 25px
+
+Use a propriedade abreviada de margem com um valor: 
+
+p {
+  margin: 25px;
+}
+
+
+O valor automático:
+Você pode definir a propriedade margin para autocentralizar horizontalmente o elemento em seu contêiner.
+
+O elemento então ocupará a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita.
+
+Usar margem: automático:
+
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+
+O valor herdado:
+Este exemplo permite que a margem esquerda do elemento <p class="ex1"> seja herdada do elemento pai (<div>):
+
+Uso do valor herdado:
+
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}

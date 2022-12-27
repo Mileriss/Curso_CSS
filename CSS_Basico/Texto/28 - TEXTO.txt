@@ -1,0 +1,39 @@
+28 - TEXTO
+
+CSS tem muitas propriedades para formatar texto.
+
+Cor do texto:
+A colorpropriedade é usada para definir a cor do texto. A cor é especificada por:
+
+um nome de cor - como "vermelho"
+um valor HEX - como "#ff0000"
+um valor RGB - como "rgb(255,0,0)"
+
+A cor de texto padrão para uma página é definida no seletor de corpo.
+
+body {
+  color: blue;
+}
+
+h1 {
+  color: green;
+}
+
+
+Cor do texto e cor de fundo
+Neste exemplo, definimos a background-color propriedade e a color propriedade:
+
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}

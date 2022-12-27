@@ -1,0 +1,62 @@
+70 - CONTADORES 
+
+Contadores CSS são "variáveis" mantidas pelo CSS cujos valores podem ser incrementados por regras CSS (para rastrear quantas vezes eles são usados). Os contadores permitem ajustar a aparência do conteúdo com base em seu posicionamento no documento.
+
+Numeração automática com contadores:
+Os contadores CSS são como "variáveis". Os valores das variáveis ​​podem ser incrementados por regras CSS (que rastrearão quantas vezes elas são usadas).
+
+Para trabalhar com contadores CSS, usaremos as seguintes propriedades:
+
+counter-reset- Cria ou redefine um contador
+counter-increment- Incrementa um valor de contador
+content- Insere conteúdo gerado
+counter()ou counters()função - Adiciona o valor de um contador a um elemento
+
+Para usar um contador CSS, primeiro ele deve ser criado com counter-reset.
+
+O exemplo a seguir cria um contador para a página (no seletor de corpo), então incrementa o valor do contador para cada elemento <h2> e adiciona "Section < value of the counter >:" ao início de cada elemento <h2>:
+
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+
+
+
+Contadores de aninhamento:
+O exemplo a seguir cria um contador para a página (seção) e um contador para cada elemento <h1> (subseção). O contador "seção" será contado para cada elemento <h1> com "Seção < valor do contador de seção >.", e o contador "subseção" será contado para cada elemento <h2> com "< valor do contador de seção >.< valor do contador de subseções >":
+
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+
+
+Um contador também pode ser útil para fazer listas destacadas porque uma nova instância de um contador é criada automaticamente em elementos filho. Aqui usamos a counters()função para inserir uma string entre diferentes níveis de contadores aninhados:
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}

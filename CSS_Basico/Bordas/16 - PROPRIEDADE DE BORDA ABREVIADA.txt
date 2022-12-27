@@ -1,0 +1,25 @@
+16 - PROPRIEDADE DE BORDA ABREVIADA
+
+A border propriedade é uma propriedade abreviada para as seguintes propriedades de borda individuais:
+
+border-width
+border-style(requerido)
+border-color
+
+p {
+  border: 5px solid red;
+}
+
+Você também pode especificar todas as propriedades de borda individuais para apenas um lado:
+
+Borda Esquerda:
+p {
+  border-left: 6px solid red;
+}
+
+
+Borda inferior:
+p {
+  border-bottom: 6px solid red;
+}
+

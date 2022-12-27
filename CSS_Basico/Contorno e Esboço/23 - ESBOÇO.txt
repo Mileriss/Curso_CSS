@@ -1,0 +1,41 @@
+23 - ESBOÇO 
+
+Um contorno é uma linha desenhada fora da borda do elemento.
+
+Um contorno é uma linha que é desenhada em torno de elementos, FORA das bordas, para fazer o elemento "se destacar".
+
+CSS tem as seguintes propriedades de estrutura de tópicos:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+
+Estilo de contorno CSS:
+A outline-style propriedade especifica o estilo do contorno e pode ter um dos seguintes valores:
+
+dotted- Define um contorno pontilhado
+dashed- Define um contorno tracejado
+solid- Define um contorno sólido
+double- Define um contorno duplo
+groove- Define um contorno ranhurado 3D
+ridge- Define um contorno 3D estriado
+inset- Define um contorno de inserção 3D
+outset- Define um esboço inicial 3D
+none- Não define contorno
+hidden- Define um contorno oculto
+
+O exemplo a seguir mostra os diferentes outline-style valores:
+
+Demonstração dos diferentes estilos de contorno:
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}

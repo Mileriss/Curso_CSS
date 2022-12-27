@@ -1,0 +1,40 @@
+46 - ESTILO DA TABELA
+
+Preenchimento da mesa:
+Para controlar o espaço entre a borda e o conteúdo de uma tabela, use a padding propriedade nos elementos <td> e <th>:
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+
+Divisores horizontais:
+
+Adicione a border-bottompropriedade a <th> e <td> para divisores horizontais:
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+
+Mesa flutuante:
+Use o :hoverseletor em <tr> para destacar as linhas da tabela ao passar o mouse:
+
+tr:hover {background-color: coral;}
+
+
+Tabelas listradas:
+
+Para tabelas com listras zebra, use o nth-child()seletor e adicione a background-colora todas as linhas da tabela pares (ou ímpares):
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+Cor da tabela:
+O exemplo abaixo especifica a cor de fundo e a cor do texto dos elementos <th>:
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}

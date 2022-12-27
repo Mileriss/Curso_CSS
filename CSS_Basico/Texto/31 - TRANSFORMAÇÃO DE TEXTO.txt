@@ -1,0 +1,17 @@
+31 - TRANSFORMAÇÃO DE TEXTO 
+
+A text-transform propriedade é usada para especificar letras maiúsculas e minúsculas em um texto.
+
+Ele pode ser usado para transformar tudo em letras maiúsculas ou minúsculas, ou colocar em maiúscula a primeira letra de cada palavra:
+
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}

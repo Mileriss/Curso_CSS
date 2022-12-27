@@ -1,0 +1,20 @@
+44 - TAMANHO DA TABELA 
+
+Largura e Altura da Mesa:
+A largura e a altura de uma tabela são definidas pelas propriedades widthe height.
+
+O exemplo abaixo define a largura da tabela para 100% e a altura dos elementos <th> para 70px:
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 70px;
+}
+
+Para criar uma tabela que deve ocupar apenas metade da página, use width: 50%:
+
+table {
+  width: 50%;
+}

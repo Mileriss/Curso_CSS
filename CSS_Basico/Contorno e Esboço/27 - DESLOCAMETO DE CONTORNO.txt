@@ -1,0 +1,23 @@
+27 - DESLOCAMETO DE CONTORNO
+
+A outline-offset propriedade adiciona espaço entre um contorno e a borda/borda de um elemento. O espaço entre um elemento e seu contorno é transparente.
+
+O exemplo a seguir especifica um contorno de 15px fora da borda da borda:
+
+p {
+  margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+}
+
+O exemplo a seguir mostra que o espaço entre um elemento e seu contorno é transparente:
+
+p {
+  margin: 30px;
+  background: yellow;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+}
+

@@ -1,0 +1,137 @@
+69 - FORMULÁRIO
+
+A aparência de um formulário HTML pode ser muito melhorada com CSS:
+
+Estilizando campos de entrada:
+Use a width propriedade para determinar a largura do campo de entrada:
+
+input {
+  width: 100%;
+}
+
+O exemplo acima se aplica a todos os elementos <input>. Se você deseja apenas estilizar um tipo de entrada específico, pode usar seletores de atributo:
+
+input[type=text]- selecionará apenas campos de texto
+input[type=password]- selecionará apenas campos de senha
+input[type=number]- selecionará apenas campos numéricos
+etc.
+
+
+Entradas acolchoadas:
+Use a padding propriedade para adicionar espaço dentro do campo de texto.
+
+Dica: Quando você tem muitas entradas uma após a outra, você também pode querer adicionar algumas margin, para adicionar mais espaço fora delas:
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+Entradas com bordas:
+Use a border propriedade para alterar o tamanho e a cor da borda e use a border-radiuspropriedade para adicionar cantos arredondados:
+
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+Se você quiser apenas uma borda inferior, use a border-bottompropriedade:
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+
+Entradas coloridas:
+Use a background-color propriedade para adicionar uma cor de fundo à entrada e a colorpropriedade para alterar a cor do texto:
+
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+}
+
+
+Entradas focadas:
+Por padrão, alguns navegadores adicionam um contorno azul ao redor da entrada quando ela recebe o foco (clicado). Você pode remover esse comportamento adicionando outline: none;à entrada.
+
+Use o :focusseletor para fazer algo com o campo de entrada quando ele ficar em foco:
+
+input[type=text]:focus {
+ background-color: lightblue;	E/OU	input[type=text]:focus {
+}					border: 3px solid #555;
+					}
+
+
+Entrada com ícone/imagem:
+Se você quiser um ícone dentro da entrada, use a background-imagepropriedade e posicione-o com a background-positionpropriedade. Observe também que adicionamos um grande preenchimento à esquerda para reservar o espaço do ícone:
+
+input[type=text] {
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+
+Entrada de pesquisa animada:
+Neste exemplo, usamos a transition propriedade CSS para animar a largura da entrada de pesquisa quando ela fica em foco. Você aprenderá mais sobre a transitionpropriedade mais tarde, em nosso capítulo Transições CSS .
+
+input[type=text] {
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+
+Estilizando Áreas de Texto:
+Dica: Use a resize propriedade para evitar que as áreas de texto sejam redimensionadas (desabilite o "grabber" no canto inferior direito):
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+
+Menus de seleção de estilo:
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+
+Botões de entrada de estilo:
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Tip: use width: 100% for full-width buttons */
+
+
+
+
+
+

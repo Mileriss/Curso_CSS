@@ -1,0 +1,53 @@
+72 - UNIDADES
+
+Unidades CSS:
+CSS tem várias unidades diferentes para expressar um comprimento.
+
+Muitas propriedades CSS aceitam valores de "comprimento", como width, margin, padding, font-size, etc.
+
+Comprimento é um número seguido por uma unidade de comprimento, como 10px, 2em, etc.
+
+Defina diferentes valores de comprimento, usando px (pixels):
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+
+
+Comprimentos absolutos:
+As unidades de comprimento absoluto são fixas e um comprimento expresso em qualquer uma delas aparecerá exatamente com esse tamanho.
+
+Unidades de comprimento absoluto não são recomendadas para uso na tela, porque os tamanhos das telas variam muito. No entanto, eles podem ser usados ​​se a mídia de saída for conhecida, como para layout de impressão.
+
+Unit	Description
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+
+* Pixels (px) são relativos ao dispositivo de visualização. Para dispositivos de baixo dpi, 1px é um pixel de dispositivo (ponto) da tela. Para impressoras e telas de alta resolução, 1px implica em vários pixels de dispositivo.
+
+
+Comprimentos relativos:
+As unidades de comprimento relativo especificam um comprimento relativo a outra propriedade de comprimento. As unidades de comprimento relativo são melhor dimensionadas entre diferentes mídias de renderização.
+
+Unit	Description	
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element
+
+

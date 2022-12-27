@@ -1,0 +1,132 @@
+30 - DECORAÇÃO DE TEXTO
+
+Adicionar uma linha de decoração ao texto:
+A text-decoration-line propriedade é usada para adicionar uma linha de decoração ao texto.
+
+h1 {
+  text-decoration-line: overline;
+}
+
+h2 {
+  text-decoration-line: line-through;
+}
+
+h3 {
+  text-decoration-line: underline;
+}
+
+p {
+  text-decoration-line: overline underline;
+}
+
+
+Especifique uma cor para a linha de decoração:
+A text-decoration-color propriedade é usada para definir a cor da linha de decoração.
+
+h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+p {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+
+Especifique um estilo para a linha de decoração:
+A text-decoration-style propriedade é usada para definir o estilo da linha de decoração.
+
+h1 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+p.ex1 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+p.ex3 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+
+Especifique a espessura da linha de decoração:
+A text-decoration-thickness propriedade é usada para definir a espessura da linha de decoração.
+
+h1 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+p {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+
+
+A propriedade abreviada:
+A text-decoration propriedade é uma propriedade abreviada para:
+
+text-decoration-line(requerido)
+text-decoration-color(opcional)
+text-decoration-style(opcional)
+text-decoration-thickness(opcional)
+
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline red;
+}
+
+h3 {
+  text-decoration: underline red double;
+}
+
+p {
+  text-decoration: underline red double 5px;
+}
+
+

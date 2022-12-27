@@ -1,0 +1,65 @@
+14 - COR DA BORDA CSS
+
+A border-color propriedade é usada para definir a cor das quatro bordas.
+
+A cor pode ser definida por:
+
+name - especifique um nome de cor, como "vermelho"
+HEX - especifique um valor HEX, como "#ff0000"
+RGB - especifique um valor RGB, como "rgb(255,0,0)"
+HSL - especifique um valor HSL, como "hsl(0, 100%, 50%)"
+transparente
+
+Nota: Se border-color não estiver definido, herda a cor do elemento.
+
+Demonstração das diferentes cores de borda:
+
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-color: green;
+}
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+}
+
+
+Cores Laterais Específicas
+A border-color propriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda). 
+
+p.one {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+
+
+Valores HEX
+A cor da borda também pode ser especificada usando um valor hexadecimal (HEX):
+
+p.one {
+  border-style: solid;
+  border-color: #ff0000; /* red */
+}
+
+
+Valores RGB
+Usando valores RGB:
+
+p.one {
+  border-style: solid;
+  border-color: rgb(255, 0, 0); /* red */
+}
+
+
+Valores HSL
+Você também pode usar valores HSL:
+
+p.one {
+  border-style: solid;
+  border-color: hsl(0, 100%, 50%); /* red */

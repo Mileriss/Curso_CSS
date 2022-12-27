@@ -1,0 +1,15 @@
+47 - TABELA RESPONSIVA 
+
+Uma tabela responsiva exibirá uma barra de rolagem horizontal se a tela for muito pequena para exibir o conteúdo completo:
+
+Adicione um elemento de contêiner (como <div>) ao overflow-x:autoredor do elemento <table> para torná-lo responsivo:
+
+<div style="overflow-x:auto;">
+
+<table>
+... table content ...
+</table>
+
+</div>
+
+

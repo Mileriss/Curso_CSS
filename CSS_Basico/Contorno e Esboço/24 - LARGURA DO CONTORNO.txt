@@ -1,0 +1,38 @@
+24 - LARGURA DO CONTORNO
+
+A outline-width propriedade especifica a largura do contorno e pode ter um dos seguintes valores:
+
+fino (normalmente 1px)
+médio (normalmente 3px)
+grosso (normalmente 5px)
+Um tamanho específico (em px, pt, cm, em, etc)
+
+O exemplo a seguir mostra alguns contornos com larguras diferentes:
+
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+p.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: medium;
+}
+
+p.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thick;
+}
+
+p.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 4px;
+}

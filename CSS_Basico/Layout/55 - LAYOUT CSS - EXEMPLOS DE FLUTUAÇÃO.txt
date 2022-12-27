@@ -1,0 +1,68 @@
+55 - LAYOUT CSS - EXEMPLOS DE FLUTUAÇÃO 
+
+Esta página contém exemplos comuns de float.
+
+Com a float propriedade, é fácil flutuar caixas de conteúdo lado a lado:
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 50px; /* if you want space between the images */
+}
+
+
+Imagens lado a lado:
+
+A grade de caixas também pode ser usada para exibir imagens lado a lado:
+
+.img-container {
+  float: left;
+  width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 5px; /* if you want space between the images */
+}
+
+
+Caixas de Altura Igual:
+No exemplo anterior, você aprendeu a flutuar caixas lado a lado com a mesma largura. No entanto, não é fácil criar caixas flutuantes com alturas iguais. Uma solução rápida, no entanto, é definir uma altura fixa, como no exemplo abaixo:
+
+.box {
+  height: 500px;
+}
+
+
+Exemplo de layout da Web:
+Também é comum fazer layouts web inteiros usando a float propriedade:
+
+.header, .footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+
+
+
+

@@ -1,0 +1,95 @@
+4 - ADICIONANDO CSS
+
+Existem três maneiras de inserir uma folha de estilo:
+
+CSS externo
+CSS interno
+CSS embutido
+
+
+CSS EXTERNO:
+Com uma folha de estilo externa, você pode alterar a aparência de um site inteiro alterando apenas um arquivo!
+
+Cada página HTML deve incluir uma referência ao arquivo de folha de estilo externo dentro do elemento <link>, dentro da seção head.
+
+Estilos externos são definidos dentro do elemento <link>, dentro da seção <head> de uma página HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Uma folha de estilo externa pode ser escrita em qualquer editor de texto e deve ser salva com uma extensão .css.
+
+O arquivo .css externo não deve conter tags HTML.
+
+Aqui está a aparência do arquivo "mystyle.css":
+
+"meuestilo.css"
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+
+CSS INTERNO:
+Uma folha de estilo interna pode ser usada se uma única página HTML tiver um estilo único.
+
+O estilo interno é definido dentro do elemento <style>, dentro da seção head.
+
+Estilos internos são definidos dentro do elemento <style>, dentro da seção <head> de uma página HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+CSS EMBUTIDO:
+Um estilo embutido pode ser usado para aplicar um estilo único para um único elemento.
+
+Para usar estilos embutidos, adicione o atributo style ao elemento relevante. O atributo style pode conter qualquer propriedade CSS.
+
+Os estilos embutidos são definidos no atributo "estilo" do elemento relevante:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+
+

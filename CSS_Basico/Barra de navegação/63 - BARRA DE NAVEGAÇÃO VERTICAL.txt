@@ -1,0 +1,96 @@
+63 - BARRA DE NAVEGAÇÃO VERTICAL
+
+Para construir uma barra de navegação vertical, você pode estilizar os elementos <a> dentro da lista, além do código da página anterior:
+
+li a {
+  display: block;
+  width: 60px;
+}
+
+Exemplo explicado:
+
+display: block;- A exibição dos links como elementos de bloco torna toda a área do link clicável (não apenas o texto) e nos permite especificar a largura (e preenchimento, margem, altura etc., se desejar)
+width: 60px;- Os elementos do bloco ocupam a largura total disponível por padrão. Queremos especificar uma largura de 60 pixels
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+li a {
+  display: block;
+}
+
+
+Exemplos de barra de navegação vertical:
+Crie uma barra de navegação vertical básica com uma cor de fundo cinza e altere a cor de fundo dos links quando o usuário passar o mouse sobre eles:
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+Link de navegação ativo/atual:
+Adicione uma classe "ativa" ao link atual para que o usuário saiba em qual página ele está:
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+Centralizar links e adicionar bordas:
+Adicione text-align:centera <li> ou <a> para centralizar os links.
+
+Adicione a border propriedade para <ul> adicionar uma borda ao redor da barra de navegação. Se você também quiser bordas dentro da barra de navegação, adicione um border-bottoma todos os elementos <li>, exceto o último:
+
+ul {
+  border: 1px solid #555;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+Barra de navegação vertical fixa de altura total:
+Crie uma navegação lateral "fixa" de altura total:
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+
+
+

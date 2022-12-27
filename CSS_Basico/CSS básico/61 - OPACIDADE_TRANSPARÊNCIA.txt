@@ -1,0 +1,79 @@
+61 - OPACIDADE_TRANSPARÊNCIA
+
+A opacity propriedade especifica a opacidade/transparência de um elemento.
+
+Imagem transparente:
+A opacity propriedade pode ter um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:
+
+img {
+  opacity: 0.5;
+}
+
+
+Efeito de passar o mouse transparente:
+A opacity propriedade é frequentemente usada junto com o :hover seletor para alterar a opacidade ao passar o mouse:
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+Exemplo explicado:
+O primeiro bloco CSS é semelhante ao código do Exemplo 1. Além disso, adicionamos o que deve acontecer quando um usuário passa o mouse sobre uma das imagens. Nesse caso, queremos que a imagem NÃO seja transparente quando o usuário passar o mouse sobre ela. O CSS para isso é opacity:1;.
+
+Quando o ponteiro do mouse se afastar da imagem, a imagem ficará transparente novamente.
+
+Um exemplo de efeito de foco invertido:
+
+img:hover {
+  opacity: 0.5;
+}
+
+
+Caixa transparente
+Ao usar a opacity propriedade para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filho herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente:
+
+div {
+  opacity: 0.3;
+}
+
+
+Texto na caixa transparente:
+
+<html>
+<head>
+<style>
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+

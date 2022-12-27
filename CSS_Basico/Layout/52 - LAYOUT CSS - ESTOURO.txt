@@ -1,0 +1,63 @@
+52 - LAYOUT CSS - ESTOURO
+
+A propriedade CSS overflow controla o que acontece com o conteúdo grande demais para caber em uma área.
+
+Estouro de CSS:
+A overflowpropriedade especifica se o conteúdo deve ser recortado ou adicionado barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada.
+
+A overflowpropriedade tem os seguintes valores:
+
+visible- Predefinição. O estouro não é cortado. O conteúdo é renderizado fora da caixa do elemento
+hidden- O estouro é cortado e o restante do conteúdo ficará invisível
+scroll- O estouro é cortado e uma barra de rolagem é adicionada para ver o restante do conteúdo
+auto- Semelhante a scroll, mas adiciona barras de rolagem apenas quando necessário
+
+
+estouro: visível:
+Por padrão, o estouro é visible, o que significa que não é recortado e renderizado fora da caixa do elemento:
+
+div {
+  width: 200px;
+  height: 65px;
+  background-color: coral;
+  overflow: visible;
+}
+
+
+estouro: oculto:
+Com o hiddenvalor, o estouro é cortado e o restante do conteúdo fica oculto:
+
+div {
+  overflow: hidden;
+}
+
+
+estouro: rolar:
+Definindo o valor como scroll, o estouro é cortado e uma barra de rolagem é adicionada para rolar dentro da caixa. Observe que isso adicionará uma barra de rolagem horizontal e verticalmente (mesmo que você não precise):
+
+div {
+  overflow: scroll;
+}
+
+
+estouro: automático:
+O autovalor é semelhante a scroll, mas adiciona barras de rolagem apenas quando necessário:
+
+div {
+  overflow: auto;
+}
+
+
+estouro-x e estouro-y:
+As propriedades overflow-xand overflow-yespecificam se o estouro do conteúdo deve ser alterado apenas horizontalmente ou verticalmente (ou ambos):
+
+overflow-xespecifica o que fazer com as bordas esquerda/direita do conteúdo.
+overflow-yespecifica o que fazer com as bordas superior/inferior do conteúdo.
+
+div {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+
+

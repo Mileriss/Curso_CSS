@@ -1,0 +1,113 @@
+42 - LISTAS
+
+Listas HTML e Propriedades da Lista CSS:
+Em HTML, existem dois tipos principais de listas:
+
+listas não ordenadas (<ul>) - os itens da lista são marcados com marcadores
+listas ordenadas (<ol>) - os itens da lista são marcados com números ou letras
+
+As propriedades da lista CSS permitem:
+
+Definir marcadores de itens de lista diferentes para listas ordenadas
+Definir marcadores de itens de lista diferentes para listas não ordenadas
+Definir uma imagem como marcador de item da lista
+Adicionar cores de fundo a listas e itens de lista
+
+
+Marcadores de itens de lista diferentes:
+A list-style-type propriedade especifica o tipo de marcador de item de lista.
+
+O exemplo a seguir mostra alguns dos marcadores de itens de lista disponíveis:
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+
+Uma imagem como marcador de item de lista
+A list-style-image propriedade especifica uma imagem como o marcador de item da lista:
+
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+
+Posicione os marcadores de itens da lista
+A list-style-position propriedade especifica a posição dos marcadores de item de lista (pontos de bala).
+
+"list-style-position: outside;" significa que os marcadores estarão fora do item da lista.
+"list-style-position: inside;" significa que os marcadores estarão dentro do item da lista. 
+
+ul.a {
+  list-style-position: outside;
+}
+
+ul.b {
+  list-style-position: inside;
+}
+
+
+Remover configurações padrão
+A list-style-type:nonepropriedade também pode ser usada para remover os marcadores/balas. 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+Lista - propriedade abreviada
+A list-style propriedade é uma propriedade abreviada. Ele é usado para definir todas as propriedades da lista em uma declaração:
+
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+
+
+Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+list-style-type(se uma imagem de estilo de lista for especificada, o valor desta propriedade será exibido se a imagem por algum motivo não puder ser exibida)
+list-style-position(especifica se os marcadores de item de lista devem aparecer dentro ou fora do fluxo de conteúdo)
+list-style-image(especifica uma imagem como marcador de item da lista)
+
+
+Lista de estilo com cores:
+Também podemos estilizar listas com cores, para torná-las um pouco mais interessantes.
+
+Qualquer coisa adicionada à tag <ol> ou <ul> afeta a lista inteira, enquanto as propriedades adicionadas à tag <li> afetarão os itens individuais da lista:
+
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}

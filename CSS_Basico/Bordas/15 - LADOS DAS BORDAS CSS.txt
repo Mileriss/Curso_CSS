@@ -1,0 +1,72 @@
+15 - LADOS DAS BORDAS CSS
+
+Borda CSS - Lados Individuais:
+Nos exemplos das páginas anteriores, você viu que é possível especificar uma borda diferente para cada lado.
+
+Em CSS, também existem propriedades para especificar cada uma das bordas (superior, direita, inferior e esquerda):
+
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+O exemplo acima dá o mesmo resultado que este:
+
+p {
+  border-style: dotted solid;
+}
+
+
+Então, aqui está como funciona:
+
+Se a border-style propriedade tiver quatro valores:
+
+estilo de borda: pontilhado sólido duplo tracejado;
+borda superior é pontilhada
+borda direita é sólida
+borda inferior é dupla
+borda esquerda é tracejada
+
+
+Se a border-style propriedade tiver três valores:
+
+estilo de borda: duplo sólido pontilhado;
+borda superior é pontilhada
+as bordas direita e esquerda são sólidas
+borda inferior é dupla
+
+
+Se a border-style propriedade tiver dois valores:
+
+estilo de borda: sólido pontilhado;
+as bordas superior e inferior são pontilhadas
+as bordas direita e esquerda são sólidas
+
+
+Se a border-style propriedade tiver um valor:
+
+estilo de borda: pontilhado;
+todas as quatro bordas são pontilhadas
+
+
+/* Four values */
+p {
+  border-style: dotted solid double dashed;
+}
+
+/* Three values */
+p {
+  border-style: dotted solid double;
+}
+
+/* Two values */
+p {
+  border-style: dotted solid;
+}
+
+/* One value */
+p {
+  border-style: dotted;
+}

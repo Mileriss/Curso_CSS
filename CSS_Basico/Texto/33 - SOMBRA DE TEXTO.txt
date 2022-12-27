@@ -1,0 +1,55 @@
+33 - SOMBRA DE TEXTO
+
+A text-shadow propriedade adiciona sombra ao texto.
+
+Em seu uso mais simples, você especifica apenas a sombra horizontal (2px) e a sombra vertical (2px):
+
+h1 {
+  text-shadow: 2px 2px;
+}
+
+Em seguida, adicione uma cor (vermelha) à sombra:
+
+h1 {
+  text-shadow: 2px 2px red;
+}
+
+Em seguida, adicione um efeito de desfoque (5px) à sombra:
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+
+Mais exemplos de sombra de texto:
+
+Exemplo 1
+Sombra de texto em um texto branco:
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+Exemplo 2
+Sombra de texto com brilho de néon vermelho:
+
+h1 {
+  text-shadow: 0 0 3px #ff0000;
+}
+
+
+Exemplo 3
+Sombra de texto com brilho de néon vermelho e azul:
+
+h1 {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+
+Exemplo 4
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}

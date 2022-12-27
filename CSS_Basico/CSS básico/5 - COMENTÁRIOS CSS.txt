@@ -1,0 +1,28 @@
+5 - COMENTÁRIOS CSS
+
+Comentários CSS
+Os comentários são usados ​​para explicar o código e podem ajudar quando você editar o código-fonte posteriormente.
+
+Os comentários são ignorados pelos navegadores.
+
+LINHA UNICA:
+/* This is a single-line comment */
+p {
+  color: red;
+}
+
+
+NO MEIO DO CÓDIGO:
+p {
+  color: red;  /* Set text color to red */
+}
+
+
+MULTIPLAS LINHAS:
+/* This is
+a multi-line
+comment */
+
+p {
+  color: red;
+}

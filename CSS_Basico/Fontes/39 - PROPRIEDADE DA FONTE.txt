@@ -1,0 +1,23 @@
+39 - PROPRIEDADE DA FONTE
+
+Para encurtar o código, também é possível especificar todas as propriedades de fonte individuais em uma propriedade.
+
+A font propriedade é uma propriedade abreviada para:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+Nota: Os valores font-sizee font-family são obrigatórios. Se um dos outros valores estiver ausente, seu valor padrão será usado.
+
+Use font para definir várias propriedades de fonte em uma declaração:
+
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}

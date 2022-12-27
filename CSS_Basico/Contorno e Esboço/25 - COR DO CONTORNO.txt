@@ -1,0 +1,60 @@
+25 - COR DO CONTORNO
+
+A outline-color propriedade é usada para definir a cor do contorno.
+
+A cor pode ser definida por:
+
+name - especifique um nome de cor, como "vermelho"
+HEX - especifique um valor hexadecimal, como "#ff0000"
+RGB - especifique um valor RGB, como "rgb(255,0,0)"
+HSL - especifique um valor HSL, como "hsl(0, 100%, 50%)"
+invert - executa uma inversão de cores (o que garante que o contorno fique visível, independentemente da cor do fundo)
+
+O exemplo a seguir mostra alguns contornos diferentes com cores diferentes. Observe também que esses elementos também têm uma borda preta fina dentro do contorno:
+
+p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+p.ex3 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+
+
+Valores HEX:
+A cor do contorno também pode ser especificada usando um valor hexadecimal (HEX):
+
+p.ex1 {
+  outline-style: solid;
+  outline-color: #ff0000; /* red */
+}
+
+
+Valores RGB:
+Ou usando valores RGB:
+
+p.ex1 {
+  outline-style: solid;
+  outline-color: rgb(255, 0, 0); /* red */
+}
+
+
+Valores HSL:
+Você também pode usar valores HSL:
+
+p.ex1 {
+  outline-style: solid;
+  outline-color: hsl(0, 100%, 50%); /* red */
+}
+
+

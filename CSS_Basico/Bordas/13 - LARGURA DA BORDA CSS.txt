@@ -1,0 +1,46 @@
+13 - LARGURA DA BORDA CSS
+
+A border-width propriedade especifica a largura das quatro bordas.
+
+A largura pode ser definida como um tamanho específico (em px, pt, cm, em, etc) ou usando um dos três valores predefinidos: fino, médio ou grosso:
+
+Demonstração das diferentes larguras de borda:
+
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+
+Larguras Laterais Específicas
+A border-width propriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda):
+
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.two {
+  border-style: solid;
+  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+}
+
+p.three {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+}

@@ -1,0 +1,31 @@
+45 - ALINHAMENTO DA  TABELA 
+
+Alinhamento horizontal:
+A text-alignpropriedade define o alinhamento horizontal (como esquerda, direita ou centro) do conteúdo em <th> ou <td>.
+
+Por padrão, o conteúdo dos elementos <th> é alinhado ao centro e o conteúdo dos elementos <td> é alinhado à esquerda.
+
+Para centralizar também o conteúdo dos elementos <td>, use text-align: center:
+
+td {
+  text-align: center;
+}
+
+Para alinhar o conteúdo à esquerda, force o alinhamento dos elementos <th> a serem alinhados à esquerda, com a text-align: left propriedade:
+
+th {
+  text-align: left;
+}
+
+
+Alinhamento vertical:
+A vertical-alignpropriedade define o alinhamento vertical (como superior, inferior ou meio) do conteúdo em <th> ou <td>.
+
+Por padrão, o alinhamento vertical do conteúdo em uma tabela é no meio (para elementos <th> e <td>).
+
+O exemplo a seguir define o alinhamento vertical do texto para baixo para elementos <td>:
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}

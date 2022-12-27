@@ -1,0 +1,9 @@
+17 - BORDAS ARREDONDADAS
+
+A border-radius propriedade é usada para adicionar bordas arredondadas a um elemento:
+
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+

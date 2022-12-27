@@ -1,0 +1,25 @@
+6 - CORES CSS
+
+Cor de fundo CSS:
+Você pode definir a cor de fundo para elementos HTML:
+
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+
+Cor do texto CSS:
+Você pode definir a cor do texto:
+
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+
+Cor da borda CSS:
+Você pode definir a cor das bordas:
+
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+

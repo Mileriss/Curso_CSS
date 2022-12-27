@@ -1,0 +1,40 @@
+7 - Plano de Fundo CSS
+
+As propriedades de plano de fundo CSS são usadas para adicionar efeitos de plano de fundo para elementos.
+
+Cor de fundo CSS:
+A background-colorpropriedade especifica a cor de fundo de um elemento.
+
+A cor de fundo de uma página é definida assim:
+
+body {
+  background-color: lightblue;
+}
+
+
+Você pode definir a cor de fundo para qualquer elemento HTML:
+
+Aqui, os elementos <h1>, <p> e <div> terão cores de fundo diferentes: 
+
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+
+
+Opacidade / Transparência:
+A opacity propriedade especifica a opacidade/transparência de um elemento. Pode assumir um valor de 0,0 - 1,0. Quanto menor o valor, mais transparente:
+
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+

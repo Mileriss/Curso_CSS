@@ -1,0 +1,34 @@
+2 - SINTAXE CSS
+
+h1 {color:blue; font-size:12px;}
+
+SELETOR - h1
+
+Declaração 1 - {color:blue;
+Propriedade: color
+Valor - blue
+
+Declaração 2 - font-size:12px;}
+Propriedade: font-size
+Valor - 12px
+
+- O seletor aponta para o elemento HTML que você deseja estilizar.
+
+- O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.
+
+- Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.
+
+- Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.
+
+
+Neste exemplo, todos os elementos <p> serão alinhados ao centro, com uma cor de texto vermelha:
+
+p {
+  color: red;
+  text-align: center;
+}
+
+Exemplo explicado:
+- p é um seletor em CSS (ele aponta para o elemento HTML que você deseja estilizar: <p>).
+- color é uma propriedade, e red é o valor da propriedade
+- text-align é uma propriedade, e center é o valor da propriedade

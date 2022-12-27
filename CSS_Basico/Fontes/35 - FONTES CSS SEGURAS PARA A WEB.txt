@@ -1,0 +1,30 @@
+35 - FONTES CSS SEGURAS PARA A WEB
+
+O que são fontes seguras da Web?
+As fontes seguras da Web são fontes instaladas universalmente em todos os navegadores e dispositivos.
+
+Fontes substitutas
+No entanto, não existem fontes 100% totalmente seguras para a web. Há sempre uma chance de que uma fonte não seja encontrada ou não esteja instalada corretamente.
+
+Portanto, é muito importante sempre usar fontes de fallback.
+
+Aqui, existem três tipos de fontes: Tahoma, Verdana e sans-serif. A segunda e terceira fontes são backups, caso a primeira não seja encontrada.
+
+p {
+font-family: Tahoma, Verdana, sans-serif;
+}
+
+
+Melhores fontes seguras da Web para HTML e CSS:
+A lista a seguir são as melhores fontes seguras da Web para HTML e CSS:
+
+Arial (sem serifa)
+Verdana (sem serifa)
+Helvética (sem serifa)
+Tahoma (sem serifa)
+Trabuco MS (sem serifa)
+Times New Roman (serifa)
+Geórgia (serif)
+Garamond (serifa)
+Courier New (monoespaço)
+Brush Script MT (cursiva)

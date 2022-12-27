@@ -1,0 +1,25 @@
+19 - RECOLHER MARGEM
+
+Às vezes, duas margens colapsam em uma única margem.
+
+Recolher Margem:
+As margens superior e inferior dos elementos às vezes são recolhidas em uma única margem que é igual à maior das duas margens.
+
+Isso não acontece nas margens esquerda e direita! Apenas margens superior e inferior!
+
+Observe o seguinte exemplo:
+
+
+Demonstração de colapso de margem:
+
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+
+No exemplo acima, o elemento <h1> tem uma margem inferior de 50px e o elemento <h2> tem uma margem superior definida como 20px.
+
+O senso comum parece sugerir que a margem vertical entre o <h1> e o <h2> seria um total de 70px (50px + 20px). Mas devido ao colapso da margem, a margem real acaba sendo 50px.

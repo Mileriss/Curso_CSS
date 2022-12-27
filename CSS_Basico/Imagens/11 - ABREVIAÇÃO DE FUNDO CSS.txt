@@ -1,0 +1,32 @@
+11 - ABREVIAÇÃO DE FUNDO CSS
+
+Fundo CSS - propriedade abreviada
+Para encurtar o código, também é possível especificar todas as propriedades do plano de fundo em uma única propriedade. Isso é chamado de propriedade abreviada.
+
+Em vez de escrever:
+
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+
+Você pode usar a propriedade abreviada background:
+Use a propriedade abreviada para definir as propriedades do plano de fundo em uma declaração:
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+Não importa se um dos valores da propriedade está faltando, desde que os outros estejam nesta ordem. Observe que não usamos a propriedade background-attachment nos exemplos acima, pois ela não possui um valor.
+

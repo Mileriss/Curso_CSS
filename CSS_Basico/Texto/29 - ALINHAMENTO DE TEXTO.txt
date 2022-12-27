@@ -1,0 +1,79 @@
+29 - ALINHAMENTO DE TEXTO
+
+Alinhamento de texto
+A text-align propriedade é usada para definir o alinhamento horizontal de um texto.
+
+Um texto pode ser alinhado à esquerda ou à direita, centralizado ou justificado.
+
+h1 {
+  text-align: center; */CENTRO/*
+}
+
+h2 {
+  text-align: left; */ESQUERDA/*
+}
+
+h3 {
+  text-align: right; */DIREITA/*
+}
+
+
+Quando a text-align propriedade está configurada para "justificar", cada linha é esticada para que todas as linhas tenham a mesma largura e as margens esquerda e direita sejam retas (como em revistas e jornais):
+
+div {
+  text-align: justify;
+}
+
+
+Alinhar texto por último:
+A text-align-last propriedade especifica como alinhar a última linha de um texto.
+
+Alinhe a última linha do texto em três elementos <p>:
+
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+
+
+Direção do texto:
+As propriedades directione unicode-bidi podem ser usadas para alterar a direção do texto de um elemento:
+
+Exemplo
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+
+Alinhamento vertical:
+A vertical-align propriedade define o alinhamento vertical de um elemento.
+
+Defina o alinhamento vertical de uma imagem em um texto: 
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}

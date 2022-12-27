@@ -1,0 +1,39 @@
+9 - REPETIÇÃO DA IMAGEM DE FUNDO CSS
+
+Por padrão, a background-image propriedade repete uma imagem na horizontal e na vertical.
+
+Algumas imagens devem ser repetidas apenas na horizontal ou na vertical, ou ficarão estranhas, assim:
+
+body {
+  background-image: url("gradient_bg.png");
+}
+
+Se a imagem acima for repetida apenas horizontalmente ( background-repeat: repeat-x;), o plano de fundo ficará melhor:
+
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+
+
+CSS background-repeat: sem repetição:
+Mostrar a imagem de fundo apenas uma vez também é especificado pela background-repeatpropriedade:
+
+Mostre a imagem de fundo apenas uma vez:
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+
+
+Posição de fundo CSS:
+A background-positionpropriedade é usada para especificar a posição da imagem de fundo.
+
+Posicione a imagem de fundo no canto superior direito: 
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}

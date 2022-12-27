@@ -1,0 +1,24 @@
+10 - ANEXO DE FUNDO CSS
+
+CSS em segundo plano:
+A background-attachment propriedade especifica se a imagem de fundo deve rolar ou ser fixa (não rolará com o resto da página):
+
+Especifique que a imagem de fundo deve ser corrigida:
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+Especifique que a imagem de fundo deve rolar com o resto da página:
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+
+

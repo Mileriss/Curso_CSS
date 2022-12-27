@@ -1,0 +1,58 @@
+32 - ESPAÇAMENTO DE TEXTO
+
+Recuo de texto:
+A text-indent propriedade é usada para especificar o recuo da primeira linha de um texto:
+
+p {
+  text-indent: 50px;
+}
+
+
+Espaçamento entre letras:
+A letter-spacing propriedade é usada para especificar o espaço entre os caracteres em um texto.
+
+O exemplo a seguir demonstra como aumentar ou diminuir o espaço entre os caracteres:
+
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+
+
+Altura da linha:
+A line-height propriedade é usada para especificar o espaço entre as linhas:
+
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+
+Espaçamento entre palavras:
+A word-spacing propriedade é usada para especificar o espaço entre as palavras em um texto.
+
+O exemplo a seguir demonstra como aumentar ou diminuir o espaço entre as palavras:
+
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}
+
+
+Espaço em branco:
+A white-space propriedade especifica como o espaço em branco dentro de um elemento é tratado.
+
+Este exemplo demonstra como desabilitar a quebra de texto dentro de um elemento:
+
+p {
+  white-space: nowrap;
+}
